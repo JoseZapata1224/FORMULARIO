@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/063cca5a9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./assets/logoenty.ico" />
+<link rel="stylesheet" href="styles.css">
+    <title>GRUPO ENTY</title>
+</head>
+<body>
+
+    <form class="form-container" method="POST" action="form.php">
+        <h2 class="form-title">Contactanos</h2>
+        <input id="nombre" class="form-item" type="text"  name="nombre" placeholder="NOMBRE">
+        <input id="email" class="form-item" type="email" name="email"  placeholder="EMAIL">
+        <input id="telefono" class="form-item" type="number" name="telefono" placeholder="TELÉFONO">
+        <h4 class="form-subtitle">¿Qué proyecto querés realizar?</h4>
+
+        <select class="form-item form-select" name="proyecto"  id="" required>
+            <option value="">Seleccione una opción</option>
+            <option class="tipo-proyecto" name="Casa" value="Casa">Casa</option>
+            <option class="tipo-proyecto" name="Ampliacion" value="Ampliacion">Ampliación</option>
+            <option class="tipo-proyecto" name="Refaccion" value="Refaccion">Refacción</option>
+            <option class="tipo-proyecto" name="Piscina" value="Piscina">Piscina</option>
+            <option class="tipo-proyecto" name="Otro" value="Otro">Otro..</option>
+        </select>
+
+        <h4 class="form-subtitle">¿Qué modelo de contrato preferís?</h4>
+
+        <select class="form-item form-select" name="contrato" id="" required>
+            <option value="">Seleccione una opción</option>
+            <option name="Llave en mano" value="Llave en mano">Llave en mano</option>
+            <option name="Mano de obra" value="Mano de obra">Mano de obra</option>
+        </select>
+
+        <h4 class="form-subtitle">¿En qué lugar se llevará a cabo la obra?</h4>
+        <input class="form-item" placeholder="BARRIO / CIUDAD" name="lugar" type="text" >
+        <div class="linea-sep-form"></div>
+        <textarea class="form-text" name="mensaje" id="" cols="30" rows="5"  placeholder="Escriba su mensaje"></textarea>
+        <input id="button" type="submit">
+        
+    </form>
+
+
+
+</body>
